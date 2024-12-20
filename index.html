@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang Di Toko Furniture Interior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Toko Furniture Interior</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produk.html">Produk</a> <!-- Tautan ke halaman produk -->
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+    <div id="home" class="home-container">
+        <h2>Selamat Datang di Toko Furniture Interior</h2>
+        <p>
+            Kami menyediakan berbagai macam pilihan furniture interior berkualitas tinggi untuk 
+            memperindah dan membuat ruang Anda terasa lebih nyaman. Dari sofa minimalis, meja makan kayu, 
+            hingga lemari modern, setiap produk kami dirancang dengan desain yang elegan dan fungsional.
+        </p>
+        <p>
+            Temukan produk impian Anda dan buat rumah Anda lebih hidup dengan pilihan furniture terbaik dari kami.
+            Kami siap membantu Anda dalam memilih furniture yang tepat sesuai dengan kebutuhan dan gaya hidup Anda.
+        </p>
+        <p>
+            Jangan ragu untuk melihat galeri produk kami dan melakukan pemesanan secara langsung melalui website ini.
+            Kami siap mengantar pesanan Anda ke alamat dengan layanan terbaik.
+        </p>
+    </div>
+
+        <!-- Form Pemesanan -->
+        <div class="form-container">
+            <h2>Form Pemesanan</h2>
+            <form id="orderForm" onsubmit="return submitOrder(event)">
+                <!-- Pilih Produk -->
+                <div class="form-group">
+                    <label for="product">Pilih Produk</label>
+                    <select id="product" name="product" required>
+                        <option value="Sofa Minimalis - Rp 2,500,000">Sofa Minimalis - Rp 2,500,000</option>
+                        <option value="Meja Makan Kayu - Rp 1,750,000">Meja Makan Kayu - Rp 1,750,000</option>
+                        <option value="Lemari Modern - Rp 7,200,000">Lemari Modern - Rp 7,200,000</option>
+                        <option value="Buffet TV - Rp 1,500,000">Buffet TV - Rp 1,500,000</option>
+                    </select>
+                </div>
+
+                <!-- Nama Pembeli -->
+                <div class="form-group">
+                    <label for="name">Nama Pembeli</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <!-- Alamat Pengiriman -->
+                <div class="form-group">
+                    <label for="address">Alamat Pengiriman</label>
+                    <textarea id="address" name="address" rows="4" placeholder="Masukkan alamat lengkap" required></textarea>
+                </div>
+
+                <!-- No. Telepon -->
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="text" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+                </div>
+
+                <!-- Metode Pembayaran -->
+                <div class="form-group">
+                    <label for="payment">Metode Pembayaran</label>
+                    <select id="payment" name="payment" required>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+                    </select>
+                </div>
+
+                <!-- Button Submit -->
+                <div class="form-group">
+                    <button type="submit">Kirim Pemesanan</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Pesan Konfirmasi -->
+        <div id="confirmationMessage" class="confirmation-message">
+            Pesanan telah dibuat! Terima kasih atas pesanan Anda.
+        </div>
+
+        <!-- Rincian Pemesanan -->
+        <div id="orderDetails" class="order-details">
+            <h3>Rincian Pemesanan:</h3>
+            <p><strong>Produk yang Dipesan:</strong> <span id="orderProduct"></span></p>
+            <p><strong>Nama Pembeli:</strong> <span id="orderName"></span></p>
+            <p><strong>Alamat Pengiriman:</strong> <span id="orderAddress"></span></p>
+            <p><strong>Nomor Telepon:</strong> <span id="orderPhone"></span></p>
+            <p><strong>Metode Pembayaran:</strong> <span id="orderPayment"></span></p>
+        </div>
+    </div>
+
+    <!-- Seksi Kontak -->
+<div id="kontak" class="contact-container">
+    <h2>Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan atau membutuhkan bantuan, silakan hubungi kami melalui informasi di bawah ini:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:info@furnitureinterior.com">info@furnitureinterior.com</a></li>
+        <li><strong>Telepon:</strong> <a href="tel:+6283174781551">+6283-1747-81551</a></li>
+        <li><strong>Alamat:</strong> Jl. Raya purwakarta kp.ciawitali rt.03 rw.03 kel. Mandalasari kec.cikalong wetan kab.bandung barat</li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/ndencikal11" target="_blank">Facebook Kami</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/ndencikal11" target="_blank">Instagram Kami</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/6283174781551" target="_blank">Chat via WhatsApp</a></li>
+    </ul>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Toko Furniture Interior. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            display: block;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+        }
+
+        .product a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Produk Furniture Interior</h1>
+    </header>
+
+    <div class="product-container">
+        <!-- Produk 1 -->
+        <div class="product">
+            <img src="sofa.jpg" alt="Sofa Minimalis">
+            <a href="sofa.jpg">Sofa Minimalis</a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product">
+            <img src="meja makan k.jpg" alt="Meja Makan Kayu">
+            <a href="meja makan k.jpg">Meja Makan Kayu</a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product">
+            <img src="lemari modern.jpg" alt="Lemari Modern">
+            <a href="lemari modern.jpg">Lemari Modern</a>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="product">
+            <img src="buffet tv.jpg" alt="Buffet TV">
+            <a href="buffet tv.jpg">Buffet TV</a>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="product">
+            <img src="rak dinding.jpg" alt="Rak Dinding Kayu">
+            <a href="rak dinding.jpg">Rak Dinding Kayu</a>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="product">
+            <img src="meja kerja.jpg" alt="Kursi Kerja Ergonomis">
+            <a href="meja kerja.jpg">Meja Kerja Ergonomis</a>
+        </div>
+
+        <!-- Produk 7 -->
+        <div class="product">
+            <img src="meja belajar.jpg" alt="Meja Belajar Minimalis">
+            <a href="meja belajar.jpg">Meja Belajar Minimalis</a>
+        </div>
+
+        <!-- Produk 8 -->
+        <div class="product">
+            <img src="lemari buku.jpg" alt="Lemari Buku Modern">
+            <a href="lemari buku.jpg">Lemari Buku Modern</a>
+        </div>
+
+        <!-- Produk 9 -->
+        <div class="product">
+            <img src="kursi santai.jpg" alt="Kursi Santai Rotan">
+            <a href="kursi santai.jpg">Kursi Santai Rotan</a>
+        </div>
+
+        <!-- Produk 10 -->
+        <div class="product">
+            <img src="meja tv.jpg" alt="Meja TV Minimalis">
+            <a href="meja tv.jpg">Meja TV Minimalis</a>
+        </div>
+    </div>
+</body>
+</html>
